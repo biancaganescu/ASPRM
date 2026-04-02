@@ -1,5 +1,5 @@
 CUDA_VISIBLE_DEVICES=0,1,2,3 deepspeed --module openrlhf.cli.train_prm \
-   --save_path ./checkpoint/asprm_m_bz256_lr1e6_epo1_no_con \
+   --save_path ./checkpoint/asprm_m_75k_bz256_lr1e6_epo1_no_con \
    --save_steps 1000 \
    --logging_steps 10 \
    --eval_steps 100 \
@@ -11,7 +11,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 deepspeed --module openrlhf.cli.train_prm \
    --max_len 8192 \
    --zero_stage 2 \
    --learning_rate 1e-6 \
-   --dataset {path_to_asprm-m_train_dataset} \
+   --dataset /home/bmg44/rds/hpc-work/ASPRM/data/ASPRM_M_Training_Data_75k.jsonl \
    --input_key query \
    --label_key response \
    --flash_attn \
