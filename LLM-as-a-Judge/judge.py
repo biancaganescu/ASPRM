@@ -200,7 +200,7 @@ import re
 from tqdm.asyncio import tqdm_asyncio
 
 CONCURRENCY = 100
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = ""
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 INPUT_PATH = "../PRM_rollouts/datasets/split_by_newline_asprm_m_training_data.jsonl"
 OUTPUT_PATH = "../PRM_rollouts/datasets/simplified_judge_evaluation_data_split_by_newline.jsonl"
